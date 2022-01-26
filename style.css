@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Anton', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.zone {
+    color:#FFF;
+    font-size:2em;
+}
+
+.navbar a:hover{
+    background-color: whitesmoke;
+    margin: 30%;
+    transition: .2s;
+}
+
+/* NAV */
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #f5f5f6;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    transition: .2s;
+}
+
+/*COVER*/
+
+.header-cd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("./img/background.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .header-cd .content {
+    position: relative;
+    z-index: 1;
+  }
+  .header-cd .content h1 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .header-cd .content h1 span {
+    font-weight: 400;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .header-cd .content h1 {
+      font-size: 36px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .header-cd .content h1 {
+      font-size: 42px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .header-cd .content h1 {
+      font-size: 56px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .header-cd .content h1 {
+      font-size: 72px;
+    }
+  }
+  .header-cd .content h2 {
+    color: #FFF;
+    font-size: 42px;
+    font-weight: 900;
+    margin: 30px 0px;
+  }
+  @media screen and (min-width: 480px) {
+    .header-cd .content h2 {
+      font-size: 56px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .header-cd .content h2 {
+      font-size: 72px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .header-cd .content h2 {
+      font-size: 96px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .header-cd .content h2 {
+      font-size: 92px;
+    }
+  }
+  .header-cd .content .countdown {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 300;
+  }
+  @media screen and (min-width: 480px) {
+    .header-cd .content .countdown {
+      font-size: 42px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .header-cd .content .countdown {
+      font-size: 56px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .header-cd .content .countdown {
+      font-size: 72px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .header-cd .content .countdown {
+      font-size: 88px;
+    }
+  }
+
+
+/*Slider*/
+
+#gallery {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 22s slider infinite;
+}
+
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/*END Slider*/
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+.footer{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/***********************************************************************
+ *  NavBar 
+ **********************************************************************/
